@@ -13,7 +13,7 @@ Redmine::Plugin.register :redmine_time_tracker do
 
     requires_redmine :version_or_higher => '2.1.0'
 
-    settings :default => { 'refresh_rate' => '60', 'redirect_to_issue' => true, 'status_transitions' => { '5' => '2', '1' => '2', '3' => '2' } }, :partial => 'settings/time_tracker'
+    settings :default => { 'refresh_rate' => '60', 'redirect_to_issue' => 'true', 'status_transitions' => { '5' => '2', '1' => '2', '3' => '2' } }, :partial => 'settings/time_tracker'
 
     permission :view_others_time_trackers, :time_trackers => :index
     permission :delete_others_time_trackers, :time_trackers => :delete
