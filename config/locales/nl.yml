@@ -26,6 +26,8 @@ nl:
   time_tracker_list_title: "Timers"
   time_tracker_not_running: "Timer niet gestart"
   time_tracker_refresh_rate: "Vernieuwingsfrequentie"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "seconden"
   time_tracker_settings_from_status: "Van status"
   time_tracker_settings_general_title: "Algemeen"

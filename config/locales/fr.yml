@@ -26,6 +26,8 @@ fr:
   time_tracker_list_title: "Traqueurs de temps"
   time_tracker_not_running: "Arrêté"
   time_tracker_refresh_rate: "Taux de rafraîchissement"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "secondes"
   time_tracker_settings_from_status: "Du status"
   time_tracker_settings_general_title: "Général"

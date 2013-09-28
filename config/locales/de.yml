@@ -28,6 +28,8 @@ de:
   time_tracker_list_title: "Zeiterfassungen"
   time_tracker_not_running: "Gestoppt"
   time_tracker_refresh_rate: "Aktualisierungsrate"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "Sekunden"
   time_tracker_settings_from_status: "Von Status"
   time_tracker_settings_general_title: "Allgemein"

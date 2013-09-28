@@ -70,7 +70,11 @@ class TimeTrackersController < ApplicationController
             hours = @time_tracker.hours_spent.round(2)
             @time_tracker.destroy
 
-            redirect_to :controller => 'timelog', :action => 'new', :issue_id => issue_id, :time_entry => { :hours => hours }
+            if Setting.plugin_redmine_time_tracker['redirect_to_issue']
+                redirect_to :controller => 'issues', :action => 'edit', :issue_id => issue_id, :time_entry => { :hours => hours }
+            else
+                redirect_to :controller => 'timelog', :action => 'new', :issue_id => issue_id, :time_entry => { :hours => hours }
+            end
         end
     end
 

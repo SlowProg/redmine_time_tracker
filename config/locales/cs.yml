@@ -26,6 +26,8 @@ cs:
   time_tracker_list_title: "Sledování časus"
   time_tracker_not_running: "Neběží"
   time_tracker_refresh_rate: "Frekvence obnovení"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "sekundy"
   time_tracker_settings_from_status: "Ze stavu"
   time_tracker_settings_general_title: "Obecné"

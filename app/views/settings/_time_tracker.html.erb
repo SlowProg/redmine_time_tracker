@@ -9,6 +9,11 @@
         <%= text_field_tag 'settings[refresh_rate]', @settings['refresh_rate'], { :size => 4 } %>
         (<%= l(:time_tracker_seconds) %>)
     </p>
+    <p>
+        <%= label_tag 'settings[redirect_to_issue]', l(:time_tracker_redirect_to_issue) %>
+        <%= check_box_tag 'settings[redirect_to_issue]', 'true', @settings['redirect_to_issue'], { :size => 4 } %>
+	<%= l(:time_tracker_redirect_to_issue_help) %>
+    </p>
 </div>
 
 <h3><%= l(:time_tracker_settings_transition_title) %></h3>

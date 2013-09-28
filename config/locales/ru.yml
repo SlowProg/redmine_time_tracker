@@ -25,6 +25,8 @@ ru:
   time_tracker_label_other_time_trackers: "Таймеры других пользователей"
   time_tracker_not_running: "Остановлен"
   time_tracker_refresh_rate: "Частота обновления"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "секунды"
   time_tracker_settings_from_status: "Начальный статус"
   time_tracker_settings_general_title: "Основные"

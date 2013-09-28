@@ -26,6 +26,8 @@ ko:
   time_tracker_list_title: "추적자"
   time_tracker_not_running: "중지중..."
   time_tracker_refresh_rate: "갱신 시간"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_seconds: "초"
   time_tracker_settings_from_status: "이전 상태"
   time_tracker_settings_general_title: "일반"

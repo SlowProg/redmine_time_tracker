@@ -29,6 +29,8 @@ pt-BR:
   time_tracker_settings_new_transition_add: "Adicionar transição"
   time_tracker_settings_unknown_status: "Estado desconhecido"
   time_tracker_settings_zombie_transition: "transição de estado zombie"
+  time_tracker_redirect_to_issue: "Redirect to issue"
+  time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   list_time_trackers: "listar"
   no_time_tracker: "Sem time tracker"
   no_time_tracker_suspended: "Nenhum time tracker suspenso"
