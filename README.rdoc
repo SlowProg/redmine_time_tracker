@@ -5,6 +5,9 @@ The plugin allows to start/suspend/resume/stop a timer on a per user basis.
 
 This is a fork of the original version in order to work with the new unobtrusive javascript
 in Rails 3. Full credit for original version goes to Jérémie Delaitre.
+
+Credit for the port goes to mohikaner. The original fork is located at {GitHub}[http://github.com/mohikaner/redmine_time_tracker].
+
 == Features
 
 * Current spent time always visible
@@ -14,7 +17,7 @@ in Rails 3. Full credit for original version goes to Jérémie Delaitre.
 
 == Getting the plugin
 
-The newest version is always at {GitHub}[http://github.com/mohikaner/redmine_time_tracker].
+The newest version is always at {GitHub}[http://github.com/seeraven/redmine_time_tracker].
 
 == Install
 
