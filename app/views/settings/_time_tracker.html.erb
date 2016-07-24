@@ -1,4 +1,5 @@
 </div> <%# Hack to close the div opened by redmine before rendering this view. This is to avoid the big box wrapping all the settings content. %>
+
 <%= javascript_include_tag "settings.js", :plugin =>"redmine_time_tracker" %>
 
 <h3><%= l(:time_tracker_settings_general_title) %></h3>
@@ -12,7 +13,7 @@
     <p>
         <%= label_tag 'settings[redirect_to_issue]', l(:time_tracker_redirect_to_issue) %>
         <%= check_box_tag 'settings[redirect_to_issue]', 'true', @settings['redirect_to_issue'], { :size => 4 } %>
-	<%= l(:time_tracker_redirect_to_issue_help) %>
+        <%= l(:time_tracker_redirect_to_issue_help) %>
     </p>
 </div>
 

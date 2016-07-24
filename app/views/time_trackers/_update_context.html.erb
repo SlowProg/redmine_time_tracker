@@ -3,14 +3,14 @@
     $('#time-tracker-context').bind('ajax:success', function(event, data, status, xhr){
       $('#time-tracker-menu').html(data);
       $('#context-menu').hide();
-    }); " 
+    }); "
   %>
 <% if !time_tracker.nil? %>
     <% if time_tracker.paused %>
         <%# A time tracker is paused, display the resume action %>
         <li>
         <%= link_to l(:resume_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s,
-            { :controller => '/time_trackers', :action => 'resume' },
+            { :controller => 'time_trackers', :action => 'resume' },
             { :class => 'icon icon-start', :remote => true }
         %>
         </li>
@@ -18,7 +18,7 @@
         <%# A time tracker is not paused, display the suspend action %>
         <li>
         <%= link_to l(:suspend_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s,
-            { :controller => '/time_trackers', :action => 'suspend' },
+            { :controller => 'time_trackers', :action => 'suspend' },
             { :class => 'icon icon-pause', :remote => true }
         %>
         </li>
@@ -26,15 +26,17 @@
 
     <%# A time tracker exists, display the stop action %>
     <li>
-        <%= link_to l(:stop_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s, { :controller => '/time_trackers', :action => 'stop' },
-            { :class => 'icon icon-stop' } %>
+        <%= link_to l(:stop_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s,
+            { :controller => 'time_trackers', :action => 'stop' },
+            { :class => 'icon icon-stop' }
+        %>
     </li>
 <% elsif !@project.nil? and !@issue.nil? and User.current.allowed_to?(:log_time, @project) %>
     <%# No time tracker is running, but the user has the rights to track time on this issue %>
     <%# Display the start time tracker action %>
     <li>
         <%= link_to l(:start_time_tracker).capitalize + ' #' + @issue.id.to_s,
-            { :controller => '/time_trackers', :action => 'start', :issue_id => @issue.id },
+            { :controller => 'time_trackers', :action => 'start', :issue_id => @issue.id },
             { :class => 'icon icon-start', :remote => true }
         %>
     </li>

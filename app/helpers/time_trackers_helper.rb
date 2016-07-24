@@ -1,22 +1,22 @@
 module TimeTrackersHelper
     def issue_from_id(issue_id)
-        Issue.find(:first, :conditions => { :id => issue_id })
+        Issue.find(issue_id)
     end
 
     def user_from_id(user_id)
-        User.find(:first, :conditions => { :id => user_id })
+        User.find(user_id)
     end
-    
+
     def time_tracker_for(user)
-        TimeTracker.find(:first, :conditions => { :user_id => user.id })
+        TimeTracker.find(user.id)
     end
 
     def status_from_id(status_id)
-        IssueStatus.find(:first, :conditions => { :id => status_id })
+        IssueStatus.find(status_id)
     end
 
     def statuses_list()
-        IssueStatus.find(:all)
+        IssueStatus.all
     end
 
     def to_status_options(statuses)
@@ -40,7 +40,7 @@ module TimeTrackersHelper
     def global_allowed_to?(user, action)
         return false if user.nil?
 
-        projects = Project.find(:all)
+        projects = Project.all
         for p in projects
             if user.allowed_to?(action, p)
                 return true

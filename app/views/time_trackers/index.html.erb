@@ -31,10 +31,10 @@
                                 <% end %>
                                 <td class="issue"><%= link_to_issue issue_from_id(time_tracker[:issue_id]), :project => true %></td>
                                 <td class="start-date"><%= format_time(time_tracker[:started_on]) %></td>
-                                <td class="spent-time"><%= time_tracker.time_spent_to_s %></td>
+                                <td class="spent-time"><%= time_tracker.time_spent_formatted %></td>
                                 <td class="buttons">
                                     <%= link_to l(:time_tracker_label_delete),
-                                        { :controller => '/time_trackers', :action => 'delete', :id => time_tracker.id },
+                                        { :controller => 'time_trackers', :action => 'delete', :id => time_tracker.id },
                                         { :class => 'icon icon-del', :remote => true, :id => "test_link" }
                                         #:complete => "$('#{'user-timetracker' + time_tracker.id.to_s}').update('<td colspan=\"0\" class=\"msg\">' + request.responseText + '</td>');"
                                     %>
@@ -79,11 +79,11 @@
                                 <td class="user"><%= link_to_user user_from_id(time_tracker[:user_id]) %></td>
                                 <td class="issue"><%= link_to_issue issue_from_id(time_tracker[:issue_id]), :project => true %></td>
                                 <td class="start-date"><%= format_time(time_tracker[:started_on]) %></td>
-                                <td class="spent-time"><%= time_tracker.time_spent_to_s %></td>
+                                <td class="spent-time"><%= time_tracker.time_spent_formatted %></td>
                                 <td class="buttons">
                                     <% if User.current.allowed_to?(:delete_others_time_trackers, nil, :global => true) %>
                                         <%= link_to l(:time_tracker_label_delete),
-                                            { :controller => '/time_trackers', :action => 'delete', :id => time_tracker.id },
+                                            { :controller => 'time_trackers', :action => 'delete', :id => time_tracker.id },
                                             { :class => 'icon icon-del', :remote => true }
                                             #:complete => "$('#{'all-timetracker' + time_tracker.id.to_s}').update('<td colspan=\"0\" class=\"msg\">' + request.responseText + '</td>');"
                                         %>
