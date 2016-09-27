@@ -12,7 +12,7 @@
         %>
         <%= link_to '',
             { :controller => 'time_trackers', :action => 'stop' },
-            { :class => 'icon-action icon-stop-action', :title => l(:stop_time_tracker) }
+            { :class => 'icon-action icon-stop-action', :title => l(:stop_time_tracker), :id => "link-stop-tracking" }
          %>
     <% else %>
         <%# A time tracker is running, display the tracked issue, the time spent and the suspend/stop actions %>
@@ -27,7 +27,7 @@
         %>
         <%= link_to '',
             { :controller => 'time_trackers', :action => 'stop' },
-            { :class => 'icon-action icon-stop-action', :title => l(:stop_time_tracker) }
+            { :class => 'icon-action icon-stop-action', :title => l(:stop_time_tracker), :id => "link-stop-tracking" }
         %>
     <% end %>
 <% elsif !@project.nil? and User.current.allowed_to?(:log_time, @project) and !(@issue.nil? || @issue.new_record?) %>
