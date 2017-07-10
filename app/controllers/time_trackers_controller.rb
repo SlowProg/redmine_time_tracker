@@ -18,6 +18,11 @@ class TimeTrackersController < ApplicationController
             @time_tracker = TimeTracker.new({ :issue_id => @issue.id })
 
             if @time_tracker.save
+                @issue.assigned_to_id = User.current.id
+                if @issue.save
+                else
+                    flash[:error] = l(:auto_change_issue_assigned_to_id)
+                end
                 apply_status_transition(@issue) unless Setting.plugin_redmine_time_tracker['status_transitions'] == nil
                 render_menu
             else
