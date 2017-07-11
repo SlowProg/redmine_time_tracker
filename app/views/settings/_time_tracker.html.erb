@@ -15,6 +15,11 @@
         <%= check_box_tag 'settings[redirect_to_issue]', 'true', @settings['redirect_to_issue'], { :size => 4 } %>
         <%= l(:time_tracker_redirect_to_issue_help) %>
     </p>
+    <p>
+        <%= label_tag 'settings[issue_assigned_to_id]', l(:settings_label_issue_assigned_to_id) %>
+        <%= check_box_tag 'settings[issue_assigned_to_id]', 'true', @settings['issue_assigned_to_id'], { :size => 4 } %>
+        <%= l(:settings_label_issue_assigned_to_id_help) %>
+    </p>
 </div>
 
 <h3><%= l(:time_tracker_settings_transition_title) %></h3>
