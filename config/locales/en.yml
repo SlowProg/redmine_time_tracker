@@ -1,6 +1,7 @@
 # English strings go here for Rails i18n
 en:
   auto_change_issue_assigned_to_id: "Fail to change assigned user to the issue"
+  auto_change_already_issue_assigned_to_id: "A user to the issue is already assigned"
   list_time_trackers: "list"
   no_time_tracker: "No time tracker"
   no_time_tracker_running: "No time tracker is running"
@@ -29,6 +30,8 @@ en:
   time_tracker_refresh_rate: "Refresh rate"
   time_tracker_redirect_to_issue_help: "If enabled, the stop button opens the issue. Otherwise a new time entry is opened."
   time_tracker_redirect_to_issue: "Redirect to issue"
+  settings_label_issue_assigned_to_id: "Assign performer"
+  settings_label_issue_assigned_to_id_help: "If enabled and the issue does not have a performer, the issue performer will be assigned current user. If the issue has a performer, he will not be changed. Otherwise the issue performer will not be assigned."
   time_tracker_seconds: "seconds"
   time_tracker_settings_from_status: "From status"
   time_tracker_settings_general_title: "General"

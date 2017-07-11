@@ -15,6 +15,7 @@ Redmine::Plugin.register :redmine_time_tracker do
     settings :default => {
         'refresh_rate' => '60',
         'redirect_to_issue' => 'true',
+        'issue_assigned_to_id' => 'false',
         'status_transitions' => { '5' => '2', '1' => '2', '3' => '2' }
       },
       :partial => 'settings/time_tracker'

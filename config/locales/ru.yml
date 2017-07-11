@@ -1,5 +1,7 @@
 # Russian strings go here for Rails i18n
 ru:
+  auto_change_issue_assigned_to_id: "Неудалось назначить исполнителя задачи"
+  auto_change_already_issue_assigned_to_id: "У задачи уже есть исполнитель"
   list_time_trackers: "Список таймеров"
   no_time_tracker: "Нет учета времени"
   no_time_tracker_running: "Ни один таймер не запущен"
@@ -27,6 +29,8 @@ ru:
   time_tracker_refresh_rate: "Частота обновления"
   time_tracker_redirect_to_issue: "Редирект в задачу"
   time_tracker_redirect_to_issue_help: "Если этот параметр включен, кнопка остановки трекинга откроет на редактирование задачу. В противном случае открывается только создание трудозатрат."
+  settings_label_issue_assigned_to_id: "Назначать исполнителя"
+  settings_label_issue_assigned_to_id_help: "Если этот параметр включен и при запуске учета времени у задачи нет назначенного исполнителя, то исполнителем этой задачи становится пользователь, который запустил трекер. Если у задачи уже был исполнитель - ответственный не изменяется. Если этот параметр выключен автоматического назначения исполнителя не происходит."
   time_tracker_seconds: "секунды"
   time_tracker_settings_from_status: "Начальный статус"
   time_tracker_settings_general_title: "Основные"
